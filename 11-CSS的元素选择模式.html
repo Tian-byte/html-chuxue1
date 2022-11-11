@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的元素显示模式</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+    <style>
+        span {
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+        }
+        
+        input {
+            width: 149px;
+            height: 35px;
+        }
+        
+        a {
+            width: 150px;
+            height: 50px;
+            text-decoration: none;
+            background-color: pink;
+            /* 把行内元素a转换为区块级元素 */
+            display: block;
+        }
+        
+        div {
+            width: 300px;
+            height: 100px;
+            background-color: purple;
+            /* 把div 块级元素转换为行内元素 */
+            display: inline;
+        }
+        
+        span {
+            width: 300px;
+            height: 30px;
+            background-color: skyblue;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div>比较霸道，自己独占一行。</div> 瑟瑟发抖 <br>
+    <span>xx老师xxxxxx</span> <strong>品如的衣服</strong><br>
+    <input type="text">
+    <input type="text">
+    <a href="#">张宇</a>
+    <a href="#">张宇</a>
+    <div>我是块级元素</div>
+    <div>我是块级元素</div>
+    <span>行内元素转换为行内块元素</span>
+    <span>行内元素转换为行内块元素</span>
+</body>
+
+</html>
