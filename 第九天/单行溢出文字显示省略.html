@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单行溢出文字显示省略</title>
+    <style>
+        div {
+            width: 150px;
+            height: 80px;
+            background-color: pink;
+            margin: 100px auto;
+            /* 如果文字显示不开不自动换行 */
+            /* white-space: normal; */
+            white-space: nowrap;
+            /* 溢出的部分隐藏 */
+            overflow: hidden;
+            /* ellipsis 是省略的意思 */
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        来解决了急急急急急急急急急急急急啊啊啊艰苦艰苦就了解了
+    </div>
+</body>
+
+</html>
